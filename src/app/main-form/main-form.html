@@ -1,0 +1,14 @@
+<main class="main-form-container">
+  <aside class="nav-step-container">
+    @for (step of traverseSteps; track step.id) {
+    <div class="step-container">
+      <div class="step-id">{{ step.id }}</div>
+      <div class="step-details">
+        <span class="step-no">{{ step.step_no }}</span>
+        <span class="step-title">{{ step.step_title }}</span>
+      </div>
+    </div>
+    }
+  </aside>
+  <app-personal-info-form />
+</main>

@@ -1,0 +1,16 @@
+.main-form-container {
+  background-color: white;
+  display: flex;
+}
+.nav-step-container {
+  display: flex;
+  flex-direction: column;
+}
+.step-container {
+  display: flex;
+  align-items: center;
+}
+.step-details {
+  display: flex;
+  flex-direction: column;
+}

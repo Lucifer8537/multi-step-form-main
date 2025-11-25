@@ -1,0 +1,54 @@
+<main class="personal-info-form-container">
+  <h2 class="heading">Personal info</h2>
+  <p class="sub-heading">
+    Please provide your name, email address, and phone number.
+  </p>
+  <section class="personal-info-form">
+    <form #f="ngForm" (ngSubmit)="submit(f)">
+      <div class="form-label-container">
+        <label class="form-label">Name</label>
+        @if (!validName) {
+        <p class="require-field">This field is required</p>
+        }
+      </div>
+      <input
+        class="form-input"
+        type="text"
+        name="name"
+        [(ngModel)]="personalInfo.name"
+        required
+        #nameCtrl="ngModel"
+      />
+      <div class="form-label-container">
+        <label class="form-label">Email Address</label>
+        @if (!validEmail) {
+        <p class="require-field">This field is required</p>
+        }
+      </div>
+      <input
+        class="form-input"
+        type="text"
+        name="email"
+        [(ngModel)]="personalInfo.email"
+        required
+        #emailCtrl="ngModel"
+      />
+      <div class="form-label-container">
+        <label class="form-label">Phone Number</label>
+        @if (!validNumber) {
+        <p class="require-field">This field is required</p>
+        }
+      </div>
+      <input
+        class="form-input"
+        type="text"
+        name="phnNumber"
+        [(ngModel)]="personalInfo.phnNumber"
+        required
+        maxlength="13"
+        #phnCtrl="ngModel"
+      />
+      <button>Next Step</button>
+    </form>
+  </section>
+</main>
