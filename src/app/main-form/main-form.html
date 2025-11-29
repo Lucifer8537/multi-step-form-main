@@ -2,10 +2,16 @@
   <aside class="nav-step-container">
     @for (step of traverseSteps; track step.id) {
     <div class="step-container">
-      <div class="step-id">{{ step.id }}</div>
+      <div
+        class="step-id white"
+        [class.step-active]="step.active"
+        [class.step-inactive]="!step.active"
+      >
+        {{ step.id }}
+      </div>
       <div class="step-details">
-        <span class="step-no">{{ step.step_no }}</span>
-        <span class="step-title">{{ step.step_title }}</span>
+        <span class="step-no blue-300">{{ step.step_no }}</span>
+        <span class="step-title white">{{ step.step_title }}</span>
       </div>
     </div>
     }

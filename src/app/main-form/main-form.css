@@ -1,16 +1,49 @@
 .main-form-container {
   background-color: white;
   display: flex;
+  padding: 0.9rem 1rem;
+  border-radius: 15px;
 }
 .nav-step-container {
   display: flex;
   flex-direction: column;
+  background-image: url("../../assets/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2.132rem 1.66rem;
+  gap: 1.668rem;
+  width: 11.28rem;
+  height: 26.2rem;
+  border-radius: 7px;
 }
 .step-container {
   display: flex;
   align-items: center;
+  gap: 0.9rem;
 }
 .step-details {
   display: flex;
   flex-direction: column;
+  gap: 0.15rem;
+}
+.step-id {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.41rem 0.63rem;
+  border-radius: 85px;
+}
+.step-active {
+  color: hsl(213, 96%, 18%);
+  background-color: hsl(206, 94%, 87%);
+}
+.step-inactive {
+  border: 1px solid white;
+}
+.step-no {
+  font-size: 0.65rem;
+}
+.step-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
 }

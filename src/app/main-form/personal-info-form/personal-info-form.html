@@ -1,6 +1,6 @@
 <main class="personal-info-form-container">
-  <h2 class="heading">Personal info</h2>
-  <p class="sub-heading">
+  <h2 class="heading blue-950">Personal info</h2>
+  <p class="sub-heading grey-500">
     Please provide your name, email address, and phone number.
   </p>
   <section class="personal-info-form">
@@ -8,7 +8,7 @@
       <div class="form-label-container">
         <label class="form-label">Name</label>
         @if (!validName) {
-        <p class="require-field">This field is required</p>
+        <span class="require-field">This field is required</span>
         }
       </div>
       <input
@@ -22,7 +22,7 @@
       <div class="form-label-container">
         <label class="form-label">Email Address</label>
         @if (!validEmail) {
-        <p class="require-field">This field is required</p>
+        <span class="require-field">This field is required</span>
         }
       </div>
       <input
@@ -36,7 +36,7 @@
       <div class="form-label-container">
         <label class="form-label">Phone Number</label>
         @if (!validNumber) {
-        <p class="require-field">This field is required</p>
+        <span class="require-field">This field is required</span>
         }
       </div>
       <input

@@ -1,4 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    margin: 0;
+  margin: 0;
+  font-family: "Ubuntu";
+}
+
+.blue-950 {
+  color: hsl(213, 96%, 18%);
+}
+
+.blue-950-bg {
+  background-color: hsl(213, 96%, 18%);
+}
+
+.purple-600 {
+  color: hsl(243, 100%, 62%);
+}
+
+.purple-600-bg {
+  background-color: hsl(243, 100%, 62%);
+}
+
+.blue-300 {
+  color: hsl(228, 100%, 84%);
+}
+
+.blue-300-bg {
+  background-color: hsl(228, 100%, 84%);
+}
+
+.blue-200 {
+  color: hsl(206, 94%, 87%);
+}
+
+.blue-200-bg {
+  background-color: hsl(206, 94%, 87%);
+}
+
+.red-500 {
+  color: hsl(354, 84%, 57%);
+}
+
+.red-500-bg {
+  background-color: hsl(354, 84%, 57%);
+}
+
+.grey-500 {
+  color: hsl(231, 11%, 63%);
+}
+
+.grey-500-bg {
+  background-color: hsl(231, 11%, 63%);
+}
+
+.purple-200 {
+  color: hsl(229, 24%, 87%);
+}
+
+.purple-200-bg {
+  background-color: hsl(229, 24%, 87%);
+}
+
+.blue-100 {
+  color: hsl(218, 100%, 97%);
+}
+
+.blue-100-bg {
+  background-color: hsl(218, 100%, 97%);
+}
+
+.blue-50 {
+  color: hsl(231, 100%, 99%);
+}
+
+.blue-50-bg {
+  background-color: hsl(231, 100%, 99%);
+}
+
+.white {
+  color: hsl(0, 100%, 100%);
+}
+
+.white-bg {
+  background-color: hsl(0, 100%, 100%);
 }
