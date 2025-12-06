@@ -6,7 +6,7 @@
   <section class="personal-info-form">
     <form #f="ngForm" (ngSubmit)="submit(f)">
       <div class="form-label-container">
-        <label class="form-label">Name</label>
+        <label class="form-label blue-950">Name</label>
         @if (!validName) {
         <span class="require-field">This field is required</span>
         }
@@ -20,7 +20,7 @@
         #nameCtrl="ngModel"
       />
       <div class="form-label-container">
-        <label class="form-label">Email Address</label>
+        <label class="form-label blue-950">Email Address</label>
         @if (!validEmail) {
         <span class="require-field">This field is required</span>
         }
@@ -34,7 +34,7 @@
         #emailCtrl="ngModel"
       />
       <div class="form-label-container">
-        <label class="form-label">Phone Number</label>
+        <label class="form-label blue-950">Phone Number</label>
         @if (!validNumber) {
         <span class="require-field">This field is required</span>
         }

@@ -1,3 +1,8 @@
+:host {
+  padding: 0.9rem 4.3rem 0.9rem 5.35rem;
+  min-width: 24.25rem;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -10,4 +15,32 @@ form {
 }
 
 .heading {
+  margin: 1.2rem 0rem 0.58rem 0rem;
+  font-size: 1.73rem;
+}
+
+p {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 400;
+}
+
+section {
+  margin: 2.25rem 0rem 0rem 0rem;
+}
+
+.form-label {
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
+.form-input {
+  margin: 0.5rem 0rem 1.3rem 0rem;
+  height: 2.3rem;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding: 0rem 0.8rem;
+  font-size: 0.83rem;
+  font-weight: 600;
 }
