@@ -3,7 +3,7 @@
   [class.selected-card]="selected()"
   (click)="onSelectCard()"
 >
-  <img src="{{ img_url() }}" alt="" />
+  <img ngSrc="{{ img_url() }}" priority alt="" />
   <div class="card-detail">
     <span class="title blue-950">{{ title() }}</span>
     <span class="price grey-500">{{ price_display }}</span>

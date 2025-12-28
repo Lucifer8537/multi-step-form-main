@@ -5,10 +5,11 @@ import {
   output,
   SimpleChanges,
 } from '@angular/core';
+import { NgOptimizedImage } from "@angular/common";
 
 @Component({
   selector: 'app-plan-card',
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './plan-card.html',
   styleUrl: './plan-card.css',
 })
