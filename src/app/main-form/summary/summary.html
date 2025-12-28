@@ -1,0 +1,41 @@
+<main class="summary-container">
+  <app-title-projection [title]="title" [sub_title]="sub_title" />
+  <div class="summary">
+    <div class="plan">
+      <div class="plan-detail">
+        <span class="plan-title">{{ selected_plan_title }}</span>
+        <span class="change-plan grey-500">Change</span>
+      </div>
+      <div class="cost blue-950">
+        {{ selected_plan_cost }}
+      </div>
+    </div>
+    <hr />
+    <div class="add-ons">
+      @for (add_on of selected_add_on; track $index) {
+      <div class="add-on-detail">
+        <span class="add-on-title grey-500">{{ add_on.title }}</span>
+        @if(is_yearly) {
+        <span class="add-on-price blue-950">+${{ add_on.price * 10 }}/yr</span>
+        } @else {
+        <span class="add-on-price blue-950">+${{ add_on.price }}/mo</span>
+        }
+      </div>
+      }
+    </div>
+  </div>
+  <div class="total-container">
+    @if(is_yearly) {
+    <span class="total-title grey-500">Total (per year)</span>
+    } @else {
+    <span class="total-title grey-500">Total (per month)</span>
+    }
+    <span class="total-cost purple-600">{{ display_total_cost }}</span>
+  </div>
+  <div class="btn-container">
+    <button class="go-back white" (click)="goBack()">Go Back</button>
+    <button class="next-step blue-950-bg white" (click)="goNext()">
+      Confirm
+    </button>
+  </div>
+</main>

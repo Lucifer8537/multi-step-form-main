@@ -1,23 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PersonalInfoModal } from './personal-info-modal';
 import { FormsModule, NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import { TitleProjection } from '../title-projection/title-projection';
+import { MainFormService } from '../main-form.service';
 
 @Component({
   selector: 'app-personal-info-form',
-  imports: [FormsModule],
+  imports: [FormsModule, TitleProjection],
   templateUrl: './personal-info-form.html',
   styleUrl: './personal-info-form.css',
 })
-export class PersonalInfoForm {
-  personalInfo: PersonalInfoModal = {
-    name: '',
-    email: '',
-    phnNumber: '',
-  };
+export class PersonalInfoForm implements OnInit {
+  personalInfo!: PersonalInfoModal;
 
   validName: boolean = true;
   validEmail: boolean = true;
   validNumber: boolean = true;
+  title = 'Personal info';
+  sub_title = 'Please provide your name, email address, and phone number.';
+
+  constructor(
+    private router: Router,
+    private mainFormService: MainFormService
+  ) {}
+  ngOnInit(): void {
+    this.personalInfo = this.mainFormService.getPersonalInfoForm();
+  }
 
   isEmailValid(formEmail: string): boolean {
     if (formEmail === '') return false;
@@ -38,8 +47,9 @@ export class PersonalInfoForm {
     this.validEmail = this.isEmailValid(formEmail);
     this.validName = formName !== '';
     this.validNumber = this.isValidMobile(formPhnNumber);
-    if (this.validEmail && this.validName && this.validNumber)
-      console.log('Successfully submitted');
-    else console.log('Invalid property');
+    if (this.validEmail && this.validName && this.validNumber) {
+      this.mainFormService.setPersonalInfoForm(formValue);
+      this.router.navigate(['/select-plan']);
+    } else console.log('Invalid property');
   };
 }

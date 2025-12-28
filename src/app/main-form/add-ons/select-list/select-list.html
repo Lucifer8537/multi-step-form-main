@@ -1,0 +1,12 @@
+<div
+  class="select-container"
+  [class.selected-option]="checked()"
+  (click)="onSelChange()"
+>
+  <input type="checkbox" [checked]="checked()" />
+  <div class="details">
+    <span class="detail-title">{{ title() }}</span>
+    <span class="detail-description">{{ description() }}</span>
+  </div>
+  <span class="price">{{ price_display }}</span>
+</div>

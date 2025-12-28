@@ -1,0 +1,43 @@
+.select-container {
+  display: flex;
+  align-items: center;
+  padding: 1.05rem 1.3rem 1.07rem 1.23rem;
+  border: 1px solid #dbdadf;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  accent-color: #423bfd;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  gap: 0.4rem;
+}
+
+.detail-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #000e2f;
+}
+
+.detail-description {
+  font-size: 0.75rem;
+  color: #9f9ea2;
+}
+
+.price {
+  margin-left: auto;
+  font-size: 0.77rem;
+  font-weight: 400;
+  color: #5d579e;
+}
+
+.selected-option {
+  background-color: #f8f9fe;
+  border-color: #575096;
+}

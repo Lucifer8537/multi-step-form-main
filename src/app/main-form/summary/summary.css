@@ -1,0 +1,106 @@
+:host {
+  padding: 0.9rem 4.3rem 0.9rem 5.35rem;
+  min-width: 24.25rem;
+}
+.summary-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.summary {
+  margin-top: 2.4rem;
+  padding: 0.94rem 1.4rem 1.4rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fe;
+}
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #001735;
+}
+.plan-title {
+  font-size: 0.858rem;
+  font-weight: 500;
+}
+.change-plan {
+  font-size: 0.76rem;
+  text-decoration: underline;
+}
+.cost {
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+hr {
+  width: 100%;
+  opacity: 0.3;
+  margin: 1.35rem 0rem 0rem 0rem;
+}
+.add-ons {
+  margin-top: 0.91rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.add-on-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-on-title {
+  font-size: 0.75rem;
+}
+.add-on-price {
+  font-size: 0.75rem;
+}
+.total-container {
+  padding: 1.3em 1.4rem 1.4rem 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total-title {
+  font-size: 0.75rem;
+}
+.total-cost {
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.next-step {
+  width: fit-content;
+  padding: 0.7rem 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.next-step:hover {
+  background-color: #174a89;
+}
+
+.go-back {
+  color: #8d8e93;
+  width: fit-content;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  background: transparent;
+}
+
+.go-back:hover {
+  color: hsl(213, 96%, 18%);
+}

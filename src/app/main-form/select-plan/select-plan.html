@@ -1,0 +1,43 @@
+<main class="select-plan-container">
+  <app-title-projection [title]="title" [sub_title]="sub_title" />
+  <div class="card-list-container">
+    @for (card of card_list; track $index) {
+    <app-plan-card
+      [img_url]="card.img_url"
+      [title]="card.title"
+      [price]="card.cost"
+      [selected]="card.selected"
+      [isYearly]="isYearly"
+      (selected_card)="onSelectCard($event)"
+    />
+    }
+  </div>
+  <div class="time-frame">
+    <span
+      class="time-frame-title"
+      [class.selected]="!isYearly"
+      [class.unselected]="isYearly"
+      >Monthly</span
+    >
+    <label class="switch">
+      <input
+        type="checkbox"
+        [checked]="isYearly"
+        (change)="onToggle($event)"
+      />
+      <span class="slider round"></span>
+    </label>
+    <span
+      class="time-frame-title"
+      [class.selected]="isYearly"
+      [class.unselected]="!isYearly"
+      >Yearly</span
+    >
+  </div>
+  <div class="btn-container">
+    <button class="go-back white" (click)="goBack()">Go Back</button>
+    <button class="next-step blue-950-bg white" (click)="goNext()">
+      Next Step
+    </button>
+  </div>
+</main>

@@ -1,0 +1,46 @@
+:host {
+  cursor: pointer;
+}
+
+.card-container {
+  margin-top: 2.35rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid hsla(231, 11%, 63%, 0.3);
+  border-radius: 7px;
+  width: 7.45rem;
+  min-height: 8.5rem;
+  align-items: flex-start;
+  padding: 1rem 0.9rem 0.8rem 0.9rem;
+  box-sizing: border-box;
+  gap: 2.3rem;
+}
+
+img {
+  height: 2.1rem;
+}
+
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.title {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.price {
+  font-size: 0.75rem;
+}
+
+.offer {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.selected-card {
+  border-color: #6560a4;
+  background-color: #f8f9fe;
+}

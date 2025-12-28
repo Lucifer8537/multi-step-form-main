@@ -1,0 +1,23 @@
+:host {
+  padding: 8.9rem 4.3rem 0.9rem 5.35rem;
+  width: 24.25rem;
+  display: flex;
+}
+.thank-you-container {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  height: 4.2rem;
+}
+.thank-you-title {
+  text-align: center;
+  font-size: 1.74rem;
+  font-weight: bolder;
+  margin: 1.7rem 0rem 0.8rem 0rem;
+}
+.thank-you-message {
+  text-align: center;
+  font-size: 0.855rem;
+  line-height: 1.33rem;
+}

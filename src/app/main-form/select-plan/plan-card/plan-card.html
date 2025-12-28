@@ -1,0 +1,14 @@
+<div
+  class="card-container"
+  [class.selected-card]="selected()"
+  (click)="onSelectCard()"
+>
+  <img src="{{ img_url() }}" alt="" />
+  <div class="card-detail">
+    <span class="title blue-950">{{ title() }}</span>
+    <span class="price grey-500">{{ price_display }}</span>
+    @if (isYearly()) {
+    <span class="offer blue-950">2 months free</span>
+    }
+  </div>
+</div>

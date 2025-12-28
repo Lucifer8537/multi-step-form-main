@@ -1,14 +1,11 @@
 <main class="personal-info-form-container">
-  <h2 class="heading blue-950">Personal info</h2>
-  <p class="sub-heading grey-500">
-    Please provide your name, email address, and phone number.
-  </p>
+  <app-title-projection [title]="title" [sub_title]="sub_title" />
   <section class="personal-info-form">
     <form #f="ngForm" (ngSubmit)="submit(f)">
       <div class="form-label-container">
         <label class="form-label blue-950">Name</label>
         @if (!validName) {
-        <span class="require-field">This field is required</span>
+        <span class="require-field red-500">This field is required</span>
         }
       </div>
       <input
@@ -16,13 +13,15 @@
         type="text"
         name="name"
         [(ngModel)]="personalInfo.name"
+        placeholder="e.g. Stephen King"
+        [class.error-field]="!validName"
         required
         #nameCtrl="ngModel"
       />
       <div class="form-label-container">
         <label class="form-label blue-950">Email Address</label>
         @if (!validEmail) {
-        <span class="require-field">This field is required</span>
+        <span class="require-field red-500">This field is required</span>
         }
       </div>
       <input
@@ -30,13 +29,15 @@
         type="text"
         name="email"
         [(ngModel)]="personalInfo.email"
+        [class.error-field]="!validEmail"
+        placeholder="e.g. stephenking@lorem.com"
         required
         #emailCtrl="ngModel"
       />
       <div class="form-label-container">
         <label class="form-label blue-950">Phone Number</label>
         @if (!validNumber) {
-        <span class="require-field">This field is required</span>
+        <span class="require-field red-500">This field is required</span>
         }
       </div>
       <input
@@ -44,11 +45,13 @@
         type="text"
         name="phnNumber"
         [(ngModel)]="personalInfo.phnNumber"
+        [class.error-field]="!validNumber"
         required
         maxlength="13"
+        placeholder="e.g. +1 234 567 890"
         #phnCtrl="ngModel"
       />
-      <button>Next Step</button>
+      <button class="blue-950-bg white">Next Step</button>
     </form>
   </section>
 </main>

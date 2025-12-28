@@ -1,0 +1,128 @@
+:host {
+  padding: 0.9rem 4.3rem 0.9rem 5.35rem;
+  min-width: 24.25rem;
+}
+
+.select-plan-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-frame {
+  display: flex;
+  padding: 0.7rem 1rem 0.7rem 7rem;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 0.73rem;
+  font-weight: 600;
+  background: hsl(218, 100%, 97%);
+  border-radius: 5px;
+}
+
+.card-list-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  margin: 0rem 1.4rem 0rem 1.3rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #042859;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.7rem;
+  width: 0.7rem;
+  left: 0.15rem;
+  bottom: 0.15rem;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #042859;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #042859;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1rem);
+  -ms-transform: translateX(1rem);
+  transform: translateX(1rem);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.selected {
+  color: #021536;
+}
+
+.unselected {
+  color: #92929c;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.next-step {
+  width: fit-content;
+  padding: 0.7rem 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.next-step:hover {
+  background-color: #174a89;
+}
+
+.go-back {
+  color: #8d8e93;
+  width: fit-content;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  background: transparent;
+}
+
+.go-back:hover {
+  color: hsl(213, 96%, 18%);
+}

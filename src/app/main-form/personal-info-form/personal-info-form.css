@@ -14,17 +14,6 @@ form {
   align-items: center;
 }
 
-.heading {
-  margin: 1.2rem 0rem 0.58rem 0rem;
-  font-size: 1.73rem;
-}
-
-p {
-  margin: 0;
-  font-size: 0.86rem;
-  font-weight: 400;
-}
-
 section {
   margin: 2.25rem 0rem 0rem 0rem;
 }
@@ -38,9 +27,37 @@ section {
   margin: 0.5rem 0rem 1.3rem 0rem;
   height: 2.3rem;
   border-radius: 5px;
-  border-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
   outline: none;
   padding: 0rem 0.8rem;
   font-size: 0.83rem;
   font-weight: 600;
+}
+
+.form-input::placeholder {
+  color: hsl(231, 11%, 63%);
+}
+
+button {
+  margin-top: 3.7rem;
+  width: fit-content;
+  margin-left: auto;
+  padding: 0.7rem 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #174a89;
+}
+
+.require-field {
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.form-input.error-field {
+  border-color: hsl(354, 84%, 57%);
 }

@@ -1,0 +1,21 @@
+<main class="add-on-container">
+  <app-title-projection [title]="title" [sub_title]="sub_title" />
+  <div class="select-list-container">
+    @for (add_on of add_ons(); track $index) {
+    <app-select-list
+      [checked]="add_on.checked"
+      [title]="add_on.title"
+      [description]="add_on.description"
+      [price]="add_on.price"
+      [is_yearly]="is_yearly"
+      (title_selected)="onSelection($event)"
+    />
+    }
+  </div>
+  <div class="btn-container">
+    <button class="go-back white" (click)="goBack()">Go Back</button>
+    <button class="next-step blue-950-bg white" (click)="goNext()">
+      Next Step
+    </button>
+  </div>
+</main>

@@ -35,6 +35,7 @@
 .step-active {
   color: hsl(213, 96%, 18%);
   background-color: hsl(206, 94%, 87%);
+  border: 1px solid transparent;
 }
 .step-inactive {
   border: 1px solid white;
