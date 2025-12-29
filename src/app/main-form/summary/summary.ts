@@ -47,5 +47,5 @@ export class Summary implements OnInit {
 
   goNext = () => this.router.navigate(['/thank-you']);
 
-  navigatePlan() = () => this.router.navigate(['/select-plan']);
+  navigatePlan = () => this.router.navigate(['/select-plan']);
 }
