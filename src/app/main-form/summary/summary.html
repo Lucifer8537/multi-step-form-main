@@ -4,7 +4,7 @@
     <div class="plan">
       <div class="plan-detail">
         <span class="plan-title">{{ selected_plan_title }}</span>
-        <span class="change-plan grey-500">Change</span>
+        <span class="change-plan grey-500" (click)="navigatePlan()">Change</span>
       </div>
       <div class="cost blue-950">
         {{ selected_plan_cost }}
