@@ -32,6 +32,7 @@
 .change-plan {
   font-size: 0.76rem;
   text-decoration: underline;
+  cursor: pointer;
 }
 .cost {
   font-size: 0.84rem;
